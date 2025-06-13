@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="./output.css" rel="stylesheet">
+    <title>Contact page</title>
+</head>
+<body>
+  
+
+  <nav class="bg-white px-6 py-4 fixed top-0 w-full z-50 ">
+  <div class="flex justify-between items-center">
+   
+    <div>
+      <img src="./../logo.png.png" alt="logo" class="h-16">
+    </div>
+
+   
+    <div class="md:hidden">
+      <button onclick="togglemanu()" class="text-[rgb(3,15,111)] text-3xl">
+        &#9776;
+      </button>
+    </div>
+
+   
+    <ul id="menu" class="hidden md:flex space-x-6 text-[rgb(3,15,111)] text-lg font-semibold">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./About.html">About</a></li>
+      <li><a href="./Services.html">Services</a></li>
+      <li><a href="./Pricing.html">Pricing</a></li>
+      <li><a href="./Blog.html">Blog</a></li>
+      <li><a href="./FAQs.html">FAQs</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <ul id="mobileMenu" class="md:hidden   flex-col space-y-3 mt-4 hidden text-[rgb(3,15,111)] text-lg font-semibold">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./About.html">About</a></li>
+    <li><a href="./Services.html">Services</a></li>
+    <li><a href="./Pricing.html">Pricing</a></li>
+    <li><a href="./Blog.html">Blog</a></li>
+    <li><a href="./FAQs.html">FAQs</a></li>
+    <li><a href="./Contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+ 
+<div class="mt-30 bg-[rgb(3,15,111)]">
+  <div class="pt-3">
+ <h1 class="flex flex-col text-center  px-4 text-[36px] text-[rgb(23,227,178)] font-serif font-bold mb-4 ">Let's Connected -i'd Love to Hear From You</h1>
+  </div>
+
+   <div class="pt-3">
+ <h1 class="flex flex-col text-center  px-4 text-[24px] text-[rgb(168,218,220)] font-serif font-bold mb-4 ">Whether you have a question, need a quote, or want to discuss your bussiness's accounting needs-just send a message.i'll personally respond within 24 hours</h1>
+  </div>
+
+   <div class="pb-4 pt-3">
+ <h1 class="flex flex-col text-center  px-4 text-[18px] text-[rgb(255,255,255)] font-serif font-bold mb-4 ">At Nexfin Services, I believe that every great bussiness Relationship starts witha conversation.You don't have to know the "accounting lingo"-just tell me what's on your mind, and i'll help you from there.</h1>
+  </div>
+
+ 
+</div>
+
+
+
+
+
+<div class="w-full text-center mt-15">
+  <h1 class="text-[28px] text-[rgb(3,15,111)] font-serif font-bold">
+    Perfect Direct Contact
+  </h1>
+</div>
+
+
+<div class="w-full pl-6 mt-4">
+  <ul class="list-disc space-y-1">
+    <li>Email: abc@gmail.com</li>
+    <li>WhatsApp: +92-309-4980932</li>
+    <li>Location: Remote - Available Worldwide</li>
+  </ul>
+</div>
+
+<div class="my-5">
+  <h1 class="text-center text-[rgb(3,15,111)] text-[28px] font-serif font-bold">No Question is Too Small</h1>
+  <p class="text-[rgb(51,51,51)] font-sans text-[18px] px-3">Whether You're just getting started or scaling up your small bussiness,I'd be honored to support you.Let's work to gather to take stree out of your finance.</p>
+</div>
+
+
+
+
+
+<script>
+  function togglemanu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>
