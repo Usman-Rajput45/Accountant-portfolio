@@ -29,4 +29,4 @@
 
 [build.environment]
   NPM_FLAGS = "--include=dev"
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
