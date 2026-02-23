@@ -1,0 +1,28 @@
+# Netlify Configuration
+
+# Build settings
+[build]
+  publish = "src"
+  command = "npm run build"
+
+# Cache control headers for static assets
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects for HTML routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
