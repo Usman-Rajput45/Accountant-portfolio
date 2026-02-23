@@ -26,3 +26,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[build.environment]
+  NPM_FLAGS = "--include=dev"
+  NODE_VERSION = "18"
+
