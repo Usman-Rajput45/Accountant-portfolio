@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "npx tailwindcss -i src/input.css -o src/output.css --minify",
-    "dev": "npx tailwindcss -i src/input.css -o src/output.css --watch"
+    "dev": "npx tailwindcss -i src/input.css -o src/output.css --watch",
+     "prebuild": "rm -f src/output.css"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8"

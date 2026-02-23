@@ -31,3 +31,5 @@
   NPM_FLAGS = "--include=dev"
   NODE_VERSION = "18"
 
+[build]
+  command = "npm run build || exit 1"
